@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:text="Music"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_activity_tabbar_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_activity_tabbar_content"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/musicList"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/ll_activity_tabbar_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/musicPicLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+    <ImageView
+        android:id="@+id/musicPic"
+        android:layout_height="50dp"
+        android:layout_width="50dp"/>
+    </LinearLayout>
+</RelativeLayout>
